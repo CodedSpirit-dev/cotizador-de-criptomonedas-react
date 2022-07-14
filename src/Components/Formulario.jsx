@@ -21,8 +21,11 @@ const InputSubmit = styled.input`
 `;
 
 const Formulario = () => {
-  const [SelectMonedas] = useSelectMonedas();
+  const [SelectMonedas] = useSelectMonedas("Elige tu moneda");
+  const [SelectCriptos] = useSelectCriptos("Elige tu cripto");
 
+
+  
   return (
     <form>
       <SelectMonedas />

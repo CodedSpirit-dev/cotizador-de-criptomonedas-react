@@ -22,13 +22,14 @@ const InputSubmit = styled.input`
 
 const Formulario = () => {
   const [SelectMonedas] = useSelectMonedas("Elige tu moneda");
-  const [SelectCriptos] = useSelectCriptos("Elige tu cripto");
+  const [SelectCriptomonedas] = useSelectCriptos("Elige tu cripto");
 
 
   
   return (
     <form>
       <SelectMonedas />
+      <SelectCriptomonedas />
       <InputSubmit type="submit" value="Cotizar" />
     </form>
   );
